@@ -1,0 +1,93 @@
+.container {
+  padding: 50px;
+  /* 뷰포트에 너무 붙게하지않기 위해 */
+}
+
+.container .heros {
+  max-width: 500px;
+  margin: 0 auto;
+  /* 요소 가운데에 위치 시킴 */
+  padding: 40px 20px;
+  background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap 하지 않으면 줄바꿈 되지 않으면서 max-width크기 맞춰서 정렬된다. */
+  justify-content: center;
+}
+
+.container .heros .hero {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  margin: 4px;
+  box-sizing: border-box;
+  /* border나 padding 이 들어갈때 기본크기가 커지지않게 하기위해 border-box적용 */
+  overflow: hidden;
+  transform: skewX(-14deg);
+  transition: 
+    transform .4s,
+    background-color .5s;
+}
+
+.container .heros .hero:hover {
+  background-color: skyblue;
+  transform: skewX(-14deg) scale(1.2);
+  /* scale크기 1 이상으로 해줘야됨*/
+  z-index: 1;
+}
+
+.container .heros .hero .image {
+  width: 140%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: 50px; */
+  transform: skewX(14deg) translateX(-10px);
+  /* 그림도 함께 배경과 기울어지는 것을 막기위해 다시 skewX를 넣어준다. */
+}
+
+.container .heros .hero:nth-child(1) .image { background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/grinning-face-with-big-eyes_1f603.png");}
+.container .heros .hero:nth-child(2) .image { background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/grinning-face-with-smiling-eyes_1f604.png");}
+.container .heros .hero:nth-child(3) .image { background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/beaming-face-with-smiling-eyes_1f601.png");}
+.container .heros .hero:nth-child(4) .image { background-image: url("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/grinning-squinting-face_1f606.png");}
+.container .heros .hero:nth-child(5) .image { background-image: url("");}
+.container .heros .hero:nth-child(6) .image { background-image: url("");}
+.container .heros .hero:nth-child(7) .image { background-image: url("");}
+.container .heros .hero:nth-child(8) .image { background-image: url("");}
+.container .heros .hero:nth-child(9) .image { background-image: url("");}
+.container .heros .hero:nth-child(10) .image { background-image: url("");}
+.container .heros .hero:nth-child(11) .image { background-image: url("");}
+.container .heros .hero:nth-child(12) .image { background-image: url("");}
+.container .heros .hero:nth-child(13) .image { background-image: url("");}
+.container .heros .hero:nth-child(14) .image { background-image: url("");}
+.container .heros .hero:nth-child(15) .image { background-image: url("");}
+.container .heros .hero:nth-child(16) .image { background-image: url("");}
+.container .heros .hero:nth-child(17) .image { background-image: url("");}
+.container .heros .hero:nth-child(18) .image { background-image: url("");}
+.container .heros .hero:nth-child(19) .image { background-image: url("");}
+.container .heros .hero:nth-child(20) .image { background-image: url("");}
+.container .heros .hero:nth-child(21) .image { background-image: url("");}
+.container .heros .hero:nth-child(22) .image { background-image: url("");}
+.container .heros .hero:nth-child(23) .image { background-image: url("");}
+.container .heros .hero:nth-child(24) .image { background-image: url("");}
+.container .heros .hero:nth-child(25) .image { background-image: url("");}
+.container .heros .hero:nth-child(26) .image { background-image: url("");}
+.container .heros .hero:nth-child(27) .image { background-image: url("");}
+.container .heros .hero:nth-child(28) .image { background-image: url("");}
+.container .heros .hero:nth-child(29) .image { background-image: url("");}
+.container .heros .hero:nth-child(30) .image { background-image: url("");}
+.container .heros .hero:nth-child(31) .image { background-image: url("");}
+.container .heros .hero:nth-child(32) .image { background-image: url("");}
+
+.container .logo {
+  max-width: 200px;
+  /* 로고가 너무 커지는 것을 방지한다.  */
+  /* min-width는 최소로 줄어들 수 있는 크기 지정이라 뷰포트가 줄어들어도 로고는 크기를 최소크기로 유지한다.  */
+  margin: 0 auto;
+}
+.container .logo img {
+  width: 100%;
+  /* logo의 후손 요소이기 때문에 조상요소의 크기를 백퍼센트 따른다른 의미이다. */
+}

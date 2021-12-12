@@ -1,0 +1,10 @@
+.A {
+  background-color: orangered;
+  height: 500px;
+  width: 400px;
+}
+.B {
+  background-color: orchid;
+  height: 250px;
+  max-width: 200px;
+}
