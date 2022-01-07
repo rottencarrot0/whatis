@@ -5,6 +5,8 @@
 
 .container .heros {
   max-width: 500px;
+  /* 뷰포트를 가로로 길게 늘였을 때 content가 원래의 모양을
+  유지하도록 함, 최대로 넓어질 수 있는 길이를 정해주는 것이다. */
   margin: 0 auto;
   /* 요소 가운데에 위치 시킴 */
   padding: 40px 20px;
@@ -23,7 +25,7 @@
   border-radius: 6px;
   margin: 4px;
   box-sizing: border-box;
-  /* border나 padding 이 들어갈때 기본크기가 커지지않게 하기위해 border-box적용 */
+  /* border나 padding 이 들어갈때 기본 크기가 커지지않게 하기위해 border-box적용 */
   overflow: hidden;
   transform: skewX(-14deg);
   transition: 
